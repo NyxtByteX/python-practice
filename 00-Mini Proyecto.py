@@ -29,19 +29,21 @@ print(type(ana_vector))
 #Crear 2 números enteros y operar:
 x= 9
 y = 2
-print(x+y) #suma = 11
-print(x-y) #resta = 7
-print(x*y) #multiplicación = 18
-print(x/y) #división = 4.5
-print(x//y) #división entera = 4
-print(x**y) #potencia = 81
-print(x%y) #modulo = 1
+print("Suma:", x+y) #suma = 11
+print("Resta:", x-y) #resta = 7
+print("Multiplicación:", x*y) #multiplicación = 18
+print("División:", x/y) #división = 4.5
+print("División entera:", x//y) #división entera = 4
+print("Potencia:", x**y) #potencia = 81
+print("Modulo:", x%y) #modulo = 1
 
 #3.ESTRUCTURA DE DATOS
 
 #Crear una lista con 5 comidas favoritas
-print("Mis 5 comidas facoritas son:" ,"Chaufa" , "Pollo a la brasa" , 
-      "Arroz con pollo" , "ají de gallina" , "Ceviche")
+comidas = ["Mis 5 comidas facoritas son:" ,"Chaufa" , "Pollo a la brasa" , 
+      "Arroz con pollo" , "ají de gallina" , "Ceviche"]
+print(comidas)
+print(type(comidas))
 
 #Crear un diccionario con nombre, edad, país
 #Diccionario = Es una estructura de datos que guarda
@@ -49,7 +51,7 @@ print("Mis 5 comidas facoritas son:" ,"Chaufa" , "Pollo a la brasa" ,
 #(Es como una ficha o formulario)
 mi_info = {
     "nombre" : "Carlos",
-    "edad" : "26",
+    "edad" : 26,
     "país" : "Perú" 
 }
 
@@ -74,7 +76,22 @@ print(type(colores))
 
 #4. DESAFÍOS
 #Calcular año de nacimiento con la edad
-año_act = 2026
-edad_act = 27
-año_nac = (año_act-edad_act)
-print(año_nac)
+from datetime import datetime
+
+año_act = datetime.now().year
+año_nac = año_act - age
+
+print("Año actual:", año_act)
+print("Año de nacimiento:", año_nac)
+
+#Calcular el área de un círculo
+pi = 3.14159
+radio = 5
+area_cir= pi*(radio**2)
+print("Area del círculo:", area_cir)
+
+#Calcular el área de un rectángulo.
+largo = 10
+ancho = 5
+area_rec= (largo*ancho)
+print("Area del rectángulo:", area_rec)
