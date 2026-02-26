@@ -42,15 +42,3 @@ print(3 < 4 and "Hola" < "Python") # true and true --> true
 print(3 < 4 or "Hola" > "Python") #true or false --> true
 print(3 < 4 or ("Hola" > "Python" and 4 ==4 )) # true or (false and true) --> true or false --> true
 print(not(3 > 4)) # not(false) -> true
-
-
-
-
-
-
-
-
-
-
-
-
