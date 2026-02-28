@@ -63,3 +63,44 @@ print(languaje_slice)
 # Paso = -1 → recorre el string hacia atrás
 reversed_languaje = languaje[::-1]
 print(reversed_languaje) # "nohtyP"
+
+#FUNCIONES
+print(languaje.capitalize())
+# Pone la primera letra en mayúscula y el resto en minúscula
+# Resultado: Python
+
+print(languaje.upper())
+# Convierte todo a mayúsculas
+# Resultado: PYTHON
+
+print(languaje.count("t"))
+# Cuenta cuántas veces aparece la letra "t"
+# Es sensible a mayúsculas
+# Resultado: 1
+
+print(languaje.isnumeric())
+# Devuelve True si el string contiene solo números
+# "Python" no es numérico
+# Resultado: False
+
+print("1".isnumeric())
+# El string "1" sí contiene solo números
+# Resultado: True
+
+print(languaje.lower())
+# Convierte todo a minúsculas
+# Resultado: python
+
+print(languaje.lower().isupper())
+# Primero convierte a minúsculas
+# Luego verifica si todo está en mayúsculas
+# Resultado: False
+
+print(languaje.startswith("Py"))
+# Verifica si el string empieza con "Py"
+# Resultado: True
+
+print("Py" == "py") # No es lo mismo 
+# Compara exactamente ambos strings
+# Python distingue mayúsculas y minúsculas
+# Resultado: False
